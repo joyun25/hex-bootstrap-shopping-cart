@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>買到剁手手</title>
+</head>
+<body>
+    <!-- header -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-heart text-info" aria-hidden="true"></i>
+                六角血拚賣賣
+            </a>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle position-relative bg-transparent text-dark border-0" type="button" data-bs-toggle="dropdown">
+                    <i class="fas fa-shopping-cart fs-4" aria-hidden="true"></i>
+                    <span class="position-absolute top-25 start-75 translate-middle badge rounded-pill bg-danger">
+                        <span class="visually-hidden">購物車內的商品數量</span>
+                        2
+                    </span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-end dropdown-cart">
+                    <div class="px-4 py-3">
+                        <h6>已選擇商品</h6>
+                        <table class="table table-sm">
+                            <tbody>
+                                <tr>
+                                    <td class="align-middle text-center">
+                                        <a href="#" class="text-muted" data-bs-toggle="modal" data-bs-target="#removeModal" data-title="刪除 金牌西裝 1 件">
+                                            <i class="fas fa-trash-alt" aria-hidden="true"><span class="visually-hidden">刪除商品</span></i>
+                                        </a>
+                                    </td>
+                                    <td class="align-middle">金牌西裝</td>
+                                    <td class="align-middle">1 件</td>
+                                    <td class="align-middle text-end">$520</td>
+                                </tr>
+                                <tr>
+                                    <td class="align-middle text-center">
+                                        <a href="#" class="text-muted" data-bs-toggle="modal" data-bs-target="#removeModal" data-title="刪除 金牌女裝 1 件">
+                                            <i class="fas fa-trash-alt" aria-hidden="true"><span class="visually-hidden">刪除商品</span></i>
+                                        </a>
+                                    </td>
+                                    <td class="align-middle">金牌女裝</td>
+                                    <td class="align-middle">1 件</td>
+                                    <td class="align-middle text-end">$480</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="checkout.html" class="btn btn-primary d-block">結帳去</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- banner -->
+    <div class="p-5 mb-4 bg-light rounded-3 banner-bg">
+        <div class="container-fluid py-5">
+            <div class="bg-white bg-opacity-50 p-3">
+                <h2 class="display-5 fw-bold">買到剁手手！最後出清</h1>
+                <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- main part -->
+    <div class=" container py-5">
+        <h1 class="text-center mb-3 text-secondary">六角血拚 結帳</h1>
+        <!-- progress bar -->
+        <section class="row">
+            <div class="col-12 col-sm">
+                <div class="alert alert-success rounded-pill text-center" role="alert">
+                    <p class="mb-0">1. 輸入訂單資料</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm">
+                <div class="alert alert-light rounded-pill text-center" role="alert">
+                    <p class="mb-0">2. 金流付款</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm">
+                <div class="alert alert-light rounded-pill text-center" role="alert">
+                    <p class="mb-0">3. 完成</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="container-thin-sm m-auto">
+            <!-- shopping details -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        顯示購物車細節
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse table-responsive" aria-labelledby="headingOne">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr class="text-nowrap">
+                                <th width="30"></th>
+                                <th width="100"></th>
+                                <th>商品名稱</th>
+                                <th width="100">數量</th>
+                                <th width="80">小計</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="text-nowrap">
+                                <td class="align-middle text-center">
+                                    <a href="#" class="text-muted" data-bs-toggle="modal" data-bs-target="#removeModal" data-title="刪除 金牌西裝 1 件">
+                                        <i class="fas fa-trash-alt" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                                <td class="align-middle d-none d-sm-block">
+                                    <img src="https://images.unsplash.com/photo-1494281258937-45f28753affd?w=1350" class="img-fluid" alt="金牌西裝">
+                                </td>
+                                <td class="align-middle">金牌西裝</td>
+                                <td class="align-middle">1 件</td>
+                                <td class="align-middle text-end">$520</td>
+                            </tr>
+                            <tr class="text-nowrap">
+                                <td class="align-middle text-center">
+                                    <a href="#" class="text-muted" data-bs-toggle="modal" data-bs-target="#removeModal" data-title="刪除 金女裝 1 件">
+                                        <i class="fas fa-trash-alt" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                                <td class="align-middle d-none d-sm-block">
+                                    <img src="https://images.unsplash.com/photo-1481399124169-87493351c8a1?w=1349" class="img-fluid" alt="金牌女裝">
+                                </td>
+                                <td class="align-middle">金牌女裝</td>
+                                <td class="align-middle">1 件</td>
+                                <td class="align-middle text-end">$480</td>
+                            </tr>
+                            <tr class="text-nowrap">
+                                <td colspan="4" class="text-end">運費</td>
+                                <td class="text-end">
+                                    <strong>$60</strong>
+                                </td>
+                            </tr>
+                            <tr class="text-nowrap">
+                                <td colspan="4" class="text-end">合計</td>
+                                <td class="text-end">
+                                    <strong>$1060</strong>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- orderer info -->
+            <h5 class="mt-5 p-3 text-center bg-secondary bg-opacity-10">
+                訂購人資訊
+            </h5>
+            <form class="needs-validation" novalidate>
+                <div class="row">
+                    <div class="mb-3 col">
+                        <label for="name" class="form-label">姓名</label>
+                        <input type="text" class="form-control" id="name" placeholder="姓名" aria-describedby="nameHelp" required>
+                        <div id="nameHelp" class="form-text">請輸入姓名</div>
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="Email" id="email" aria-describedby="emailHelp" required>
+                        <div id="emailHelp" class="form-text">請輸入正確的 Email</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col">
+                        <label for="country" class="form-label">國家</label>
+                        <select name="country" class="form-control" id="country" required>
+                            <option value="台灣">台灣</option>
+                            <option value="其他">...</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="city" class="form-label">國家</label>
+                        <select name="city" class="form-control" id="city" required>
+                            <option value="台北市">台北市</option>
+                            <option value="台南市">台南市</option>
+                            <option value="高雄市">高雄市</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="pos-number" class="form-label">郵遞區號</label>
+                        <input type="number" class="form-control" id="pos-number" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="adress" class="form-label">地址</label>
+                        <input type="text" class="form-control" placeholder="重慶南路一段122號" aria-describedby="adressHelp" id="email" required>
+                        <div id="adressHelp" class="form-text">請輸入地址</div>
+                </div>
+                <div class="text-end">
+                    <a href="index.html" class="btn btn-secondary">繼續選購</a>
+                    <button type="submit" class="btn btn-primary">確認付款</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="bg-light py-5">
+        <div class="text-center">
+            <p class="text-secondary">&copy; Copright 2017 六角血拼賣賣　
+                <a href="https://www.instagram.com/hexschool/">
+                    <i class="fab fa-instagram" aria-hidden="true"></i> 
+                    Instagram
+                </a>　
+                <a href="https://zh-tw.facebook.com/hexschool/">
+                    <i class="fab fa-facebook-square" aria-hidden="true"></i> 
+                    Facebook
+                </a>　
+                <a href="https://www.hexschool.com/">
+                    About
+                </a>
+            </p>
+            <p class="text-secondary">Made with Bootstrap4</p>
+        </div>
+    </div>
+
+    <!-- modal -->
+    <div class="modal fade" id="removeModal" tabindex="-1" aria-labelledby="removeModalLabel" aria-hidden="true" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="removeModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-0">是否確認刪除訂單？</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">否</button>
+                    <button type="button" class="btn btn-outline-danger d-block px-5">是</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="js/all.js"></script>
+</body>
+</html>

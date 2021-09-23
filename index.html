@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>買到剁手手</title>
+</head>
+<body>
+    <!-- header -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-heart text-info" aria-hidden="true"></i>
+                六角血拚賣賣
+            </a>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle position-relative bg-transparent text-dark border-0" type="button" data-bs-toggle="dropdown">
+                    <i class="fas fa-shopping-cart fs-4" aria-hidden="true"></i>
+                    <span class="position-absolute top-25 start-75 translate-middle badge rounded-pill bg-danger">
+                        <span class="visually-hidden">購物車內的商品數量</span>
+                        2
+                    </span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-end dropdown-cart">
+                    <div class="px-4 py-3">
+                        <h6>已選擇商品</h6>
+                        <table class="table table-sm">
+                            <tbody>
+                                <tr>
+                                    <td class="align-middle text-center">
+                                        <a href="#" class="text-muted" data-bs-toggle="modal" data-bs-target="#removeModal" data-title="刪除 金牌西裝 1 件">
+                                            <i class="fas fa-trash-alt"><span class="visually-hidden">刪除商品</span></i>
+                                        </a>
+                                    </td>
+                                    <td class="align-middle">金牌西裝</td>
+                                    <td class="align-middle">1 件</td>
+                                    <td class="align-middle text-end">$520</td>
+                                </tr>
+                                <tr>
+                                    <td class="align-middle text-center">
+                                        <a href="#" class="text-muted" data-bs-toggle="modal" data-bs-target="#removeModal" data-title="刪除 金牌女裝 1 件">
+                                            <i class="fas fa-trash-alt"><span class="visually-hidden">刪除商品</span></i>
+                                        </a>
+                                    </td>
+                                    <td class="align-middle">金牌女裝</td>
+                                    <td class="align-middle">1 件</td>
+                                    <td class="align-middle text-end">$480</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="checkout.html" class="btn btn-primary d-block">結帳去</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- banner -->
+    <div class="p-5 mb-4 bg-light rounded-3 banner-bg">
+        <div class="container-fluid py-5">
+            <div class="bg-white bg-opacity-50 p-3">
+                <h1 class="display-5 fw-bold">買到剁手手！最後出清</h1>
+                <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- products -->
+    <div class="container">
+        <div class="row">
+            <!-- menu -->
+            <div class="col-md-3">
+                <div class="list-group sticky-top">
+                    <a href="#list-home" class="list-group-item list-group-item-action active" aria-current="true" data-bs-toggle="list">
+                        <i class="fas fa-suitcase" aria-hidden="true"></i> 金牌專賣店
+                    </a>
+                    <a href="#list-gift" class="list-group-item list-group-item-action" data-bs-toggle="list">
+                        <i class="fas fa-gift" aria-hidden="true"></i> 禮品區
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action" data-bs-toggle="list">
+                        <i class="fas fa-film" aria-hidden="true"></i> 影音商品
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action" data-bs-toggle="list">
+                        <i class="fas fa-paw" aria-hidden="true"></i> 寵物專用
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action" data-bs-toggle="list">
+                        <i class="fas fa-tree" aria-hidden="true"></i> 居家環境
+                    </a>
+                </div>
+            </div>
+
+            <!-- cards -->
+            <div class="col-md-9">
+                <div class="tab-content">
+                    <!-- search bar -->
+                    <div class="input-group mb-3 search-width">
+                        <input type="text" class="form-control" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-warning" type="submit" id="button-addon2">
+                            <i class="fas fa-search" aria-hidden="true"></i> Search
+                        </button>
+                    </div>
+                    <!-- home -->
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                        <div class="row mb-5">
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 text-center h-100 box-shadow">
+                                    <img src="https://images.unsplash.com/photo-1494281258937-45f28753affd?w=1350" class="card-img-top" alt="金牌西裝">
+                                    <div class="card-body">
+                                        <h5 class="card-title">金牌西裝</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="product.html" class="btn btn-outline-secondary">S</a>
+                                            <a href="product.html" class="btn btn-outline-secondary disabled">M</a>
+                                            <a href="product.html" class="btn btn-outline-secondary">L</a>
+                                            <a href="product.html" class="btn btn-outline-secondary">XL</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 text-center h-100 box-shadow">
+                                    <img src="https://images.unsplash.com/photo-1481399124169-87493351c8a1?w=1349" class="card-img-top" alt="金牌女裝">
+                                    <div class="card-body">
+                                        <h5 class="card-title">金牌女裝</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">S</a>
+                                            <a href="#" class="btn btn-outline-secondary">M</a>
+                                            <a href="#" class="btn btn-outline-secondary">L</a>
+                                            <a href="#" class="btn btn-outline-secondary">XL</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 text-center h-100 box-shadow">
+                                    <img src="https://images.unsplash.com/photo-1486250944723-86bca2b15b06?w=1351" class="card-img-top" alt="特工眼鏡">
+                                    <div class="card-body">
+                                        <h5 class="card-title">特工眼鏡</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm d-block">
+                                            <a href="#" class="btn btn-outline-secondary d-block">
+                                                <i class="fas fa-cart-arrow-down" aria-hidden="true"></i> 搶購去
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 text-center h-100 box-shadow">
+                                    <img src="https://images.unsplash.com/photo-1497339100210-9e87df79c218?w=1350" class="card-img-top" alt="特工西裝">
+                                    <div class="card-body">
+                                        <h5 class="card-title">特工西裝</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm d-block">
+                                            <a href="#" class="btn btn-outline-secondary d-block">
+                                                <i class="fas fa-cart-arrow-down" aria-hidden="true"></i> 搶購去
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 text-center h-100 box-shadow">
+                                    <img src="https://images.unsplash.com/photo-1485373650022-3ed53f62b8f3?w=634" class="card-img-top" alt="變聲領帶">
+                                    <div class="card-body">
+                                        <h5 class="card-title">變聲領帶</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm d-block">
+                                            <a href="#" class="btn btn-outline-secondary disabled d-block">缺貨中</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- pagination -->
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item disabled">
+                                    <a class="page-link">Previous</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item disabled"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item disabled"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <!-- gift -->
+                    <div class="tab-pane fade" id="list-gift" role="tabpanel" aria-labelledby="list-gift-list">
+                        <div class="row mb-5">
+                            <div class="col-md-4 mb-4">
+                                <div class="card border-0 text-center h-100 box-shadow">
+                                    <img src="https://images.unsplash.com/photo-1605199032971-54b8f596ef0e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="超精緻禮物">
+                                    <div class="card-body">
+                                        <h5 class="card-title">超精緻禮物</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm d-block">
+                                            <a href="#" class="btn btn-outline-secondary d-block">
+                                                <i class="fas fa-cart-arrow-down" aria-hidden="true"></i> 搶購去
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- pagination -->
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item disabled">
+                                    <a class="page-link">Previous</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item disabled"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item disabled"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="bg-light py-5">
+        <div class="text-center">
+            <p class="text-secondary">&copy; Copright 2017 六角血拼賣賣　
+                <a href="https://www.instagram.com/hexschool/">
+                    <i class="fab fa-instagram" aria-hidden="true"></i> 
+                    Instagram
+                </a>　
+                <a href="https://zh-tw.facebook.com/hexschool/">
+                    <i class="fab fa-facebook-square" aria-hidden="true"></i> 
+                    Facebook
+                </a>　
+                <a href="https://www.hexschool.com/">
+                    About
+                </a>
+            </p>
+            <p class="text-secondary">Made with Bootstrap4</p>
+        </div>
+    </div>
+
+    <!-- modal -->
+    <div class="modal fade" id="removeModal" tabindex="-1" aria-labelledby="removeModalLabel" aria-hidden="true" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="removeModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-0">是否確認刪除訂單？</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">否</button>
+                    <button type="button" class="btn btn-outline-danger d-block px-5">是</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="js/all.js"></script>
+</body>
+</html>
