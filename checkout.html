@@ -73,23 +73,17 @@
     <div class=" container py-5">
         <h1 class="text-center mb-3 text-secondary">六角血拚 結帳</h1>
         <!-- progress bar -->
-        <section class="row">
-            <div class="col-12 col-sm">
-                <div class="alert alert-success rounded-pill text-center" role="alert">
-                    <p class="mb-0">1. 輸入訂單資料</p>
-                </div>
-            </div>
-            <div class="col-12 col-sm">
-                <div class="alert alert-light rounded-pill text-center" role="alert">
-                    <p class="mb-0">2. 金流付款</p>
-                </div>
-            </div>
-            <div class="col-12 col-sm">
-                <div class="alert alert-light rounded-pill text-center" role="alert">
-                    <p class="mb-0">3. 完成</p>
-                </div>
-            </div>
-        </section>
+        <ol class="row list-unstyled">
+            <li class="col-12 col-sm alert alert-success rounded-pill text-center" role="alert">
+                1. 輸入訂單資料
+            </li>
+            <li class="col-12 col-sm alert alert-light rounded-pill text-center" role="alert">
+                2. 金流付款
+            </li>
+            <li class="col-12 col-sm alert alert-light rounded-pill text-center" role="alert">
+                3. 完成
+            </li>
+        </ol>
 
         <div class="container-thin-sm m-auto">
             <!-- shopping details -->
@@ -193,8 +187,8 @@
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="adress" class="form-label">地址</label>
-                        <input type="text" class="form-control" placeholder="重慶南路一段122號" aria-describedby="adressHelp" id="email" required>
+                    <label for="address" class="form-label">地址</label>
+                        <input type="text" class="form-control" placeholder="重慶南路一段122號" aria-describedby="adressHelp" id="address" required>
                         <div id="adressHelp" class="form-text">請輸入地址</div>
                 </div>
                 <div class="text-end">
@@ -206,25 +200,33 @@
     </div>
 
     <!-- footer -->
-    <div class="bg-light py-5">
+    <footer class="bg-light py-5">
         <div class="text-center">
-            <p class="text-secondary">&copy; Copright 2017 六角血拼賣賣　
-                <br class="d-sm-none">
-                <a href="https://www.instagram.com/hexschool/">
-                    <i class="fab fa-instagram" aria-hidden="true"></i> 
-                    Instagram
-                </a>　
-                <a href="https://zh-tw.facebook.com/hexschool/">
-                    <i class="fab fa-facebook-square" aria-hidden="true"></i> 
-                    Facebook
-                </a>　
-                <a href="https://www.hexschool.com/">
-                    About
-                </a>
-            </p>
-            <p class="text-secondary">Made with Bootstrap5</p>
+            <ul class="list-unstyled">
+                <li class="d-inline-block me-2">
+                    <p class="text-secondary mb-0">&copy; Copright 2017 六角血拼賣賣</p>
+                </li>
+                <li class="d-inline-block me-2">
+                    <a href="https://www.instagram.com/hexschool/">
+                        <i class="fab fa-instagram" aria-hidden="true"></i> 
+                        Instagram
+                    </a>
+                </li>
+                <li class="d-inline-block me-2">
+                    <a href="https://zh-tw.facebook.com/hexschool/">
+                        <i class="fab fa-facebook-square" aria-hidden="true"></i> 
+                        Facebook
+                    </a>
+                </li>
+                <li class="d-inline-block me-2">
+                    <a href="https://www.hexschool.com/">
+                        About
+                    </a>
+                </li>
+            </ul>
+            <p class="text-secondary mt-3">Made with Bootstrap5</p>
         </div>
-    </div>
+    </footer>
 
     <!-- modal -->
     <div class="modal fade" id="removeModal" tabindex="-1" aria-labelledby="removeModalLabel" aria-hidden="true" data-bs-backdrop="static">
