@@ -1,6 +1,6 @@
 # 六角學院切版作業
 版型皆出自 [六角學院](https://www.hexschool.com/)線上課程作業，僅作切版練習
-### Bootstrap5-購物網站介面：[Github Pages](https://joyun25.github.io/hex-shopping-cart/)
+### Bootstrap5-購物網站介面：[Github Pages](https://joyun25.github.io/hex-bootatrap-shopping-cart/)
 ![](https://i.imgur.com/eCbwH1x.jpg)
 #### 功能：
 - 商品選單可切換商品分頁
